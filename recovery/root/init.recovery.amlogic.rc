@@ -1,0 +1,28 @@
+on early-init
+    insmod /boot/dwc3.ko
+	insmod /boot/aml_nftl_dev.ko
+
+on init
+    symlink /sbin/busybox /sbin/mount
+    symlink /sbin/busybox /sbin/ls
+    symlink /sbin/busybox /sbin/chmod
+    symlink /sbin/busybox /sbin/cp
+    symlink /sbin/busybox /sbin/chown
+    symlink /sbin/busybox /sbin/gzip
+    symlink /sbin/busybox /sbin/gunzip
+    symlink /sbin/busybox /sbin/chcon
+    symlink /sbin/busybox /sbin/rm
+    symlink /sbin/busybox /sbin/rmdir
+    symlink /sbin/busybox /sbin/reboot
+    symlink /sbin/busybox /sbin/vi
+    symlink /sbin/busybox /sbin/touch
+    symlink /sbin/busybox /sbin/ln
+    symlink /sbin/busybox /sbin/ifconfig
+    symlink /sbin/busybox /sbin/ps
+    symlink /sbin/busybox /sbin/install
+    symlink /sbin/busybox /sbin/echo
+    symlink /sbin/busybox /sbin/grep
+
+on fs
+
+on boot
